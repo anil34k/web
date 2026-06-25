@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5vh 0;
+}
+
+.box {
+    border: solid 2px black;
+    height: 200px;
+    width: 200px;
+}
+
+.lg1 {
+    background-image: linear-gradient(red, yellow, orange, gold, silver, brown, lightblue);
+    cursor: help;
+}
+
+.lg2 {
+    background-image: linear-gradient(to top left, red, yellow, red);
+    cursor: no-drop;
+}
+
+.lg3 {
+    background: linear-gradient(to top, brown 30%, yellow 50%);
+    cursor:zoom-out ;
+}
+
+
+.rg1 {
+    background: radial-gradient(black, yellow, red);
+    cursor: move;
+}
+
+.rg2 {
+    background: radial-gradient(circle at right, blue, skyblue, navy);
+    /* circle at right/bottom/top/left */
+    cursor: zoom-in;
+}
+
+.rg3 {
+    background: radial-gradient(circle at center, silver, black 30%, gray 70%);
+    cursor: pointer;
+}
+
+
+.cg1 {
+    background: conic-gradient(red, yellow, blue, red);
+}
+
+.rlg1 {
+    background: repeating-linear-gradient(black, yellow 20%);
+    cursor: all-scroll;
+}
+
+.rlg2 {
+    background: repeating-radial-gradient(black, yellow 25%);
+}
+
+.rlg3 {
+    background: repeating-conic-gradient(black, yellow 10%);
+}
+
+
+h2 {
+    opacity: 0.5;
+    background: navy;
+    color: white;
+}
+
+.o1 {
+    background: linear-gradient(red, rgba(13, 215, 215, 0));
+}
+
+
+h1 {
+    font-size: 50px;
+    padding: 3vh 0;
+    color: transparent;
+    background: linear-gradient(red,yellow,blue);
+    background-clip: text;
+    font-family: sans-serif;
+    text-decoration: underline;
+
+    /* If we need to display multiple colors for text 
+    we need to use color transparen and linear gradient
+    background clip text  */
+}

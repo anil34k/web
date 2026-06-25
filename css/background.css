@@ -1,0 +1,8 @@
+body{
+    background-image: url(./images/giant-panda-10039235_1920.jpg); /* this is used to set the background image  */
+    background-repeat: repeat; /* this is used to prevent the image from repeating repeat/no-repeat/round/space/*/
+    background-attachment: fixed; /* this is used to fix the image to the background /fixed/scroll/local */
+    background-size: cover; /* this is used to cover the entire background /cover/contain/ */
+    background-position: center; /* this is used to center the image /center/top/bottom/left/right/ */
+}
+p{color: white;}

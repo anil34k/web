@@ -1,0 +1,38 @@
+.square{
+    border: solid 3px black;
+    height: 200px;
+    width: 200px;
+    background: blue;
+    
+    position: fixed;
+    top: 0;
+    left: 350px;
+}
+
+.rect{
+    border: solid 3px aqua;
+    height: 100px;
+    width: 250px;
+    background: yellow;
+    position: sticky;
+    top: 0;
+}
+
+.container{
+    border: solid 3px black;
+    height: 220px;
+    width: 400px;
+    background: brown;
+    position: relative;
+    z-index: -1;
+}
+.cir{
+    border: solid2px;
+    height: 75px;
+    width: 75px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}

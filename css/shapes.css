@@ -1,0 +1,74 @@
+h1{
+    color: blueviolet;
+    filter: drop-shadow(2px 2px 5px grey);
+    margin: auto;
+}
+*{
+    margin: auto;
+}
+div{
+    margin:auto;
+
+}
+.square{
+    border: 2px solid rgb(0, 94, 125);
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    border-width: 10px;
+}
+
+.circle{
+    border: 2px solid rgb(0, 94, 125);
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    border-radius: 50%;
+}
+
+.ovel{
+    border: 2px solid rgb(0, 94, 125);
+    width: 150px;
+    height: 100px;
+    background-color: lightyellow;
+    border-radius: 75px / 50px;
+    margin-top: 20px;
+}
+
+.triangle{
+    border: 2px solid rgb(0, 0, 0);
+    width: 0;
+    border-left: 100px solid rgb(216, 157, 157);
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid rgb(216, 157, 157);
+    border-top: 100px solid transparent;
+    filter: drop-shadow(5px 5px 5px grey);
+
+}
+
+.cube{
+    border: 2px solid rgb(0, 0, 0);
+    width: 100px;
+    height: 100px;
+    border-left: 100px solid green;
+    border-right: 100px solid orange;
+    border-bottom: 100px solid rgb(216, 157, 157);
+    border-top: 100px solid blueviolet;
+    /* transform: rotate(45deg); */
+    transform: skew(45deg);
+}
+
+.leaf{
+    height: 100px;
+    width: 100px;
+    background-color: lightgreen;
+    border: solid 2px rgb(0, 94, 125);
+    border-radius: 100% 0% 100% 0%;
+}
+
+.chat{
+    border: solid 2px rgb(0, 94, 125);
+    height: 100px;
+    width: 100px;
+    border-radius: 0% 50% 50% 50%;
+}

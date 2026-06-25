@@ -1,0 +1,56 @@
+.square{
+    width: 150px;
+    height: 150px;
+    background-color: lightblue;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    border: 5px solid blue;
+}
+
+.rectangle{
+    width: 300px;
+    height: 150px;
+    background-color: lightgreen;
+    margin: auto;
+    border: 10px dashed green;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: lightblue;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    border: 5px solid blue;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+.container{
+    width: 150px;
+    height: 150px;
+    background-color: lightcoral;
+    margin: auto;
+    border: 5px solid red;
+    padding: 20px;
+    box-sizing: content-box;
+}
+
+.item1{
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+}
+
+.item2{
+    width: 10px;
+    height: 10px;
+    background-color: orange;
+    box-sizing: border-box;
+}

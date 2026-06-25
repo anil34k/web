@@ -1,0 +1,136 @@
+h1{
+    
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+
+.square{
+    margin: auto;
+    border: solid 3px orangered;
+    height: 250px;
+    width: 250px;
+    background-color: blue;
+}
+
+.rectangle{
+    margin: auto;
+    border: solid 3px lightgray;
+    height: 150px;
+    width: 250px;
+    background-color: palegreen;
+}
+
+.circle{
+    margin: auto;
+    border: solid 4px blue;
+    height: 250px;
+    width: 250px;
+    border-radius: 150px;
+    background-color: aqua;
+}
+
+.oval{
+    margin: auto;
+    border: solid 3px rgb(233, 5, 5);
+    height: 150px;
+    width: 350px;
+    background-color: blue;
+    border-radius: 100%;
+
+}
+
+.cube{
+    margin: auto;
+    border: solid 3px black;
+    height: 150px;
+    width: 150px;
+    background-color: orange;
+
+    border-top: solid 100px blue;
+    border-right: solid 100px brown;
+    border-bottom: solid 100px pink;
+    border-left: solid 100px lightcoral;
+}
+
+.triangle{
+    margin: auto;
+    border: solid 3px black;
+    height: 00px;
+    width: 00px;
+    background-color: orange;
+
+    border-top: solid 100px orangered;
+    border-right: solid 100px yellow;
+    border-bottom: solid 100px lightblue;
+    border-left: solid 100px green;
+}
+.otr{
+    margin: auto;
+    border: solid 3px black;
+    height: 00px;
+    width: 00px;
+    
+
+    border-top: solid 100px transparent;
+    border-right: solid 100px transparent;
+    border-bottom: solid 100px yellow;
+    border-left: solid 100px yellow;
+    filter:drop-shadow(1px 1px 10px black)
+}
+
+.leaf{
+    margin: auto;
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    /* border-bottom-left-radius: 100%;
+    border-top-right-radius: 100%; */
+    border-radius: 100% 0%;
+    filter:drop-shadow(1px 1px 10px black)
+}
+
+.chat{
+    margin: auto;
+    border: solid 1px orangered;
+    height: 150px;
+    width: 150px;
+    background-color: lightgray;
+
+    border-radius: 0% 100% 100% 100%;
+}
+
+.dia{
+    margin: auto;
+    border: solid 1px silver;
+    height: 150px;
+    width: 150px;
+    background: silver ;
+
+    transform: skew(30deg);
+
+}
+
+.heart{
+
+    margin: auto;
+    border: solid 3px black;
+    height: 250px;
+    width: 250px;
+    transform: rotate(45deg);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-left-style:solid;
+    border-right 
+}
+
+
+
+
+
+
+
+

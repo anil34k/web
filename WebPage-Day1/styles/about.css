@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: 10vh 10vh 45vh 25vh 10vh;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "aside1 main aside2"
+    "aside1 main section"
+    "footer footer footer"
+    ;
+}
+header{
+    background-color: aquamarine;
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    background-color: burlywood;
+    display: flex;
+    padding: 0px 2rem;
+    grid-area: nav;
+    justify-content: space-between;
+    align-items: center;
+    .links ul{
+        list-style: none;
+        display: flex;
+        gap: 2rem;
+    }
+}
+section{
+    background-color: tomato;
+    grid-area: section;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aside1{
+    background-color: violet;
+    grid-area: aside1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aside2{
+    background-color:steelblue;
+    grid-area: aside2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    background-color:rgb(199, 115, 37);
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    background-color:indigo;
+    grid-area: footer;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

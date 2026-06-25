@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    // ============================================================
+    // Conditional Statements in JavaScript
+    // Conditional statements allow JavaScript to make decisions
+    // and execute different blocks of code based on conditions.
+    // ============================================================
+
+
+    // ------------------------------------------------------------
+    // 1. `if` Statement
+    // Used when you want to execute a block only if a condition is true.
+    //
+    // Syntax:
+    //   if (condition) {
+    //       // code to execute
+    //   }
+    // ------------------------------------------------------------
+
+    // Example 1: Check Age
+    let age = 20;
+    if (age >= 18) {
+        console.log("You are an adult");
+    }
+    // Output: You are an adult
+
+    // Example 2: Positive Number
+    let num = 15;
+    if (num > 0) {
+        console.log("Positive Number");
+    }
+    // Output: Positive Number
+
+
+    // ------------------------------------------------------------
+    // 2. `if...else` Statement
+    // Used when there are two possible outcomes.
+    //
+    // Syntax:
+    //   if (condition) {
+    //       // true block
+    //   } else {
+    //       // false block
+    //   }
+    // ------------------------------------------------------------
+
+    // Example 1: Voting Eligibility
+    let age2 = 16;
+    if (age2 >= 18) {
+        console.log("Eligible for Voting");
+    } else {
+        console.log("Not Eligible for Voting");
+    }
+    // Output: Not Eligible for Voting
+
+    // Example 2: Even or Odd
+    let num2 = 7;
+    if (num2 % 2 === 0) {
+        console.log("Even Number");
+    } else {
+        console.log("Odd Number");
+    }
+    // Output: Odd Number
+
+
+    // ------------------------------------------------------------
+    // 3. `if...else if...else` Statement
+    // Used when multiple conditions need to be checked.
+    //
+    // Syntax:
+    //   if (condition1) {
+    //       // code
+    //   } else if (condition2) {
+    //       // code
+    //   } else {
+    //       // code
+    //   }
+    // ------------------------------------------------------------
+
+    // Example 1: Student Grades
+    let marks = 85;
+    if (marks >= 90) {
+        console.log("Grade A+");
+    } else if (marks >= 75) {
+        console.log("Grade A");
+    } else if (marks >= 60) {
+        console.log("Grade B");
+    } else if (marks >= 40) {
+        console.log("Grade C");
+    } else {
+        console.log("Fail");
+    }
+    // Output: Grade A
+
+    // Example 2: Traffic Signal
+    let signal = "green";
+    if (signal === "red") {
+        console.log("Stop");
+    } else if (signal === "yellow") {
+        console.log("Get Ready");
+    } else if (signal === "green") {
+        console.log("Go");
+    } else {
+        console.log("Invalid Signal");
+    }
+    // Output: Go
+
+
+    // ------------------------------------------------------------
+    // 4. Nested `if`
+    // An `if` statement inside another `if` statement.
+    //
+    // Syntax:
+    //   if (condition1) {
+    //       if (condition2) {
+    //           // code
+    //       }
+    //   }
+    // ------------------------------------------------------------
+
+    // Example 1: College Admission
+    let marks2 = 80;
+    let hasCertificate = true;
+    if (marks2 >= 75) {
+        if (hasCertificate) {
+            console.log("Admission Confirmed");
+        } else {
+            console.log("Certificate Required");
+        }
+    }
+    // Output: Admission Confirmed
+
+    // Example 2: Login Verification
+    let username = "admin";
+    let password = "1234";
+    if (username === "admin") {
+        if (password === "1234") {
+            console.log("Login Successful");
+        } else {
+            console.log("Wrong Password");
+        }
+    } else {
+        console.log("Invalid Username");
+    }
+    // Output: Login Successful
+
+
+    // ------------------------------------------------------------
+    // 5. Ternary Operator (? :)
+    // Short form of `if...else`.
+    //
+    // Syntax:
+    //   condition ? expression1 : expression2;
+    // ------------------------------------------------------------
+
+    // Example 1
+    let age3 = 21;
+    let result = age3 >= 18 ? "Adult" : "Minor";
+    console.log(result);
+    // Output: Adult
+
+    // Example 2
+    let num3 = 10;
+    console.log(num3 % 2 === 0 ? "Even" : "Odd");
+    // Output: Even
+
+
+    // ------------------------------------------------------------
+    // 6. Real-Time Example: ATM Withdrawal
+    // ------------------------------------------------------------
+    let balance = 5000;
+    let withdrawAmount = 2000;
+    if (withdrawAmount <= balance) {
+        balance -= withdrawAmount;
+        console.log("Withdrawal Successful");
+        console.log("Remaining Balance:", balance);
+    } else {
+        console.log("Insufficient Balance");
+    }
+    // Output:
+    // Withdrawal Successful
+    // Remaining Balance: 3000
+
+
+    // ------------------------------------------------------------
+    // 7. Real-Time Example: Online Shopping Discount
+    // ------------------------------------------------------------
+    let purchaseAmount = 6000;
+    if (purchaseAmount >= 5000) {
+        console.log("20% Discount Applied");
+    } else if (purchaseAmount >= 3000) {
+        console.log("10% Discount Applied");
+    } else {
+        console.log("No Discount");
+    }
+    // Output: 20% Discount Applied
+
+
+    // ------------------------------------------------------------
+    // Summary Table
+    // ------------------------------------------------------------
+    // | Statement              | Purpose                              |
+    // | ---------------------- | ------------------------------------ |
+    // | if                     | Execute code when condition is true  |
+    // | if...else              | Choose between two blocks            |
+    // | if...else if...else    | Check multiple conditions            |
+    // | Nested if              | One condition inside another         |
+    // | Ternary Operator (? :) | Short form of if...else              |
+
+
+    // ------------------------------------------------------------
+    // Practice Questions
+    // ------------------------------------------------------------
+    // 1.  Check whether a number is positive, negative, or zero.
+    // 2.  Check whether a year is a leap year.
+    // 3.  Find the largest of three numbers.
+    // 4.  Check whether a person can vote.
+    // 5.  Calculate student grade based on marks.
+    // 6.  Check whether a number is divisible by 5 and 11.
+    // 7.  Create a simple login system using nested if.
+    // 8.  Check whether a person is eligible for a driving license.
+    // 9.  Create a discount calculator for shopping.
+    // 10. Determine the day type (Weekday/Weekend) based on input.
+    //
+    // These examples cover the most commonly used conditional statements
+    // in JavaScript and are useful for interviews, exams, and practical coding.
+
+    </script>
+</body>
+</html>

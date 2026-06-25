@@ -1,0 +1,72 @@
+/* Paragraph styles: controls layout, spacing, and text transforms */
+#para1 {
+    text-align: justify; /* Stretches lines to align both left and right edges by adjusting spacing. Types: left | right | center | justify | start | end | inherit. Example: center */
+    width: 80%; /* Sets paragraph width. Types: <length> (px, em, rem) | <percentage> | auto | min-content | max-content. Example: 80% */
+    margin: auto; /* Sets outer spacing; 'auto' centers horizontally when used on block elements. Types: <length> | <percentage> | auto | inherit; supports 1-4 values (top/right/bottom/left). Example: margin: auto or margin: 10px 20px */
+    text-indent: 10vw; /* Indents the first line. Types: <length> | <percentage> | inherit. Example: 10vw */
+    text-transform: capitalize; /* Controls capitalization. Types: none | capitalize | uppercase | lowercase | full-width | inherit. Example: uppercase */
+    text-decoration: underline; /* Shorthand for decoration. Types: combination of line/style/color/thickness or 'none'. Example: underline */
+    word-spacing: 2vw; /* Spacing between words. Types: normal | <length>. Example: 2vw */
+    line-height: 6vh; /* Distance between lines. Types: normal | <number> | <length> | <percentage>. Example: 1.5 or 6vh */
+    text-decoration-line: line-through; /* Which decoration line(s) to draw. Types: none | underline | overline | line-through | inherit. Example: underline */
+    text-decoration-style: dotted; /* Style of the decoration. Types: solid | double | dotted | dashed | wavy | inherit. Example: dotted */
+    text-decoration-color: red; /* Color of the decoration. Types: <color> | inherit. Example: red */   
+    text-decoration-thickness: 5px ; /* Thickness of the decoration line. Types: auto | from-font | <length> | percentage | inherit. Example: 0.5vh */
+    text-decoration-line: underline red dotted 5px; /* Shorthand for text-decoration-line, text-decoration-color, text-decoration-style, and text-decoration-thickness */
+
+    border-top-style: double; /* Sets top border style. Types: none | solid | dashed | dotted | double | groove | ridge | inset | outset. Example: solid */
+    border-top-width: 4px; /* Sets top border width. Types: <length> | thin | medium | thick. Example: 2px */
+    border-top-color: blue; /* Sets top border color. Types: <color>. Example: blue */
+
+    border-right-style: double; /* Sets right border style. Types: none | solid | dashed | dotted | double | groove | ridge | inset | outset. Example: solid */
+    border-right-width: 4px; /* Sets right border width. Types: <length> | thin | medium | thick. Example: 2px */
+    border-right-color: blueviolet; /* Sets right border color. Types: <color>. Example: blue */
+}
+
+
+/* Heading level 1 styles: alignment and letter spacing */
+h1 {
+    text-align: center; /* Centers heading text. Types: left | right | center | justify | start | end | inherit. Example: center */
+    letter-spacing: 2vw; /* Space between letters. Types: normal | <length>. Example: 2vw */
+    text-shadow: 10px 7px 5px grey; /* Adds shadow to text. Types: <offset-x> <offset-y> <blur-radius> <color>. Example: 2px 2px 5px gray */
+}
+
+.para2 {
+    text-align: justify; /* Stretches lines to align both left and right edges by adjusting spacing. Types: left | right | center | justify | start | end | inherit. Example: center */
+    margin: auto;
+    width: 70%; /* Sets paragraph width. Types: <length> (px, em, rem) | <percentage> | auto | min-content | max-content. Example: 80% */
+    font-family: cursive; /* Sets font family. Types: generic families (serif, sans-serif, monospace, cursive, fantasy) or specific font names. Example: Arial, 'Times New Roman' */
+    font-size: 15px; /* Sets font size. Types: <length> | <percentage> | xx-small | x-small | small | medium | large | x-large | xx-large | smaller | larger. Example: 16px or 120% */
+    font-weight: bold; /* Sets font weight. Types: normal | bold | bolder | lighter | 100-900. Example: bold or 700 */
+    font-style: italic; /* Sets font style. Types: normal | italic | oblique. Example: italic */
+    color: rgb(0, 0, 0); /* Sets text color. Types: <color> values (name, hex, rgb, rgba, hsl, hsla). Example: blue or #0000FF */
+
+    border-style: dashed; /* Sets border style. Types: none | solid | dashed | dotted | double | groove | ridge | inset | outset. Example: solid */
+    border-width: 3px; /* Sets border width. Types: <length> | thin | medium | thick. Example: 2px */
+    border-color: black; /* Sets border color. Types: <color>. Example: black */
+    border-radius: 15px; /* Rounds border corners. Types: <length> | <percentage>. Example: 10px or 50% */
+}
+
+.para3{
+    width: 50%; /* Sets paragraph width. Types: <length> (px, em, rem) | <percentage> | auto | min-content | max-content. Example: 80% */
+    border-style: solid;
+    height: 30vh;
+    margin: auto;
+    /* overflow: scroll; Adds scrollbars if content overflows. Types: visible | hidden | scroll | auto. Example: scroll */
+    overflow-y: scroll; /* Adds vertical scrollbar if content overflows. Types: visible | hidden | scroll | auto. Example: scroll */
+    /* box-shadow: 10px 10px 5px grey; /* Adds shadow to the element's box. Types: <offset-x> <offset-y> <blur-radius> <spread-radius> <color>. Example: 5px 5px 10px black */
+    box-shadow: inset 5px 5px 10px lightgrey; /* Adds inset shadow to the element's box. Types: inset <offset-x> <offset-y> <blur-radius> <spread-radius> <color>. Example: inset 5px 5px 10px lightgrey */
+}
+
+img{
+    width: 300px; /* Sets image width. Types: <length> | <percentage> | auto. Example: 300px or 50% */
+    height: auto; /* Sets image height. Types: <length> | <percentage> | auto. Example: auto or 200px */
+    /* box-shadow: 1px 1px 5px grey; Adds shadow to the image. Types: <offset-x> <offset-y> <blur-radius> <color>. Example: 2px 2px 5px gray */
+    /* filter: drop-shadow(1px 1px 10px red); */
+    /* filter: brightness(200%);
+    filter: blur(10px); */
+    /* filter: opacity(0.5); */
+    /* filter:contrast(50%) */
+    /* filter:saturate(20%) */
+    filter: saturate(0%) drop-shadow(1px 1px 10px rgb(145, 18, 62))
+}

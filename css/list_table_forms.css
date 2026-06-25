@@ -1,0 +1,118 @@
+ul{
+    list-style-type: upper-roman;
+    list-style-position: inside;
+    list-style-image: linear-gradient(red,yellow,green);
+}
+li::after{
+    content: "***";
+    color: red;
+}
+
+li::before{
+    content: "... ";
+    color: aqua;
+}
+
+li:nth-child(even){
+    background: yellow;
+}
+
+table,tr,th,td{
+    border: solid 1px black;
+}
+
+h1{
+    text-align: center;
+    text-transform:uppercase ;
+}
+
+table{
+    height: 150px;
+    width: 400px;
+    margin: auto;
+}
+td{
+    text-align: center;
+    font-weight: bold;
+    
+}
+th{
+    color: red;
+}
+
+/* if we give space between pseudo selector and tag name 
+we will get the o/p for columns  */
+
+
+tr :nth-child(even){
+    background-color: yellow;
+}
+tr :nth-child(odd){
+    background-color:purple;
+}
+
+
+
+.square{
+    border: solid 2px black;
+    height: 200px;
+    width: 200px;
+    margin: 10vh auto ;
+    padding: 2vh 2vw;
+    overflow: hidden;
+}
+
+.square:hover{
+    box-shadow: 1px 1px 10px;
+}
+.square img{
+    height: 100%;
+    width: 100%;
+    transition: all .5s;
+}
+
+.square img:hover{
+    /* transform:  scale(1.5); */
+
+    transform: translateY(-120%);
+}
+
+/* creation of forms using colors and coloring the buttons  */
+
+.formbox{
+    border: solid 2px black;
+    width: 40%;
+    margin: 10vh auto;
+    padding: 2vh 2vw ;
+    background: linear-gradient(to bottom right, navy 50%, white 50%);
+    box-shadow: 5px 5px navy;
+    display: block;
+}
+.formbox input{
+    display: block;
+    border: none ;
+    width: 90%;
+    margin: auto;
+    border-bottom: solid 2px navy;
+}
+
+.formbox button{
+    display: block;
+    margin: auto;
+}
+
+.formbox button:hover{
+    border: none;
+    border: solid 2px navy;
+    color: white;
+    background: navy;
+    cursor: pointer;
+}
+.formbox h3{
+    font-family: sans-serif;
+    color: white;
+}
+
+.formbox :where{
+    width: 90%;
+}

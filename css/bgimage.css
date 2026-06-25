@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container{
+    border: solid 2px black;
+    height: 100%;
+    width: 100%;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+.textbox{
+    position: absolute; /* it is used to set the position of the element */
+    top: 15%; /* it is used to set the top position of the element */
+    width: 100%; /* it is used to set the width of the element */
+    text-align: center; /* it is used to set the text alignment of the element */
+}

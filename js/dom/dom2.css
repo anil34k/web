@@ -1,0 +1,38 @@
+h2 {
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: 5vh auto;
+    width: 30%;
+    padding: 2vh 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.red {
+    color: red;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.green {
+    color: green;
+}
+
+.gold {
+    color: gold;
+}
+
+.on {
+    background-color: green;
+    color: white;
+}
+
+.off {
+    background-color: red;
+    color: white;
+}

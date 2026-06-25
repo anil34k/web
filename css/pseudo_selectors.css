@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+button ,a {
+    display: block;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+
+    width: 30%;
+    padding: 2vh 2vw;
+    font-size: large;
+    font-weight: none;
+    background: none;
+    border: solid 2px blue;
+    color: blue;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+button:hover, a:hover{
+    background: blue;
+    color: aliceblue;
+    box-shadow: 0 0 10px black;
+}
+
+button:active, a:hover{
+    border: solid 2px yellow;
+    background: red;
+    transform: scale(0.9);
+}
+
+
+.box{
+    border: solid 3px purple;
+    height: 200px;
+    width: 200px;
+    margin: 5vh auto;
+    background: red;
+    transition: all 3.5s;
+}
+
+.box:hover{
+    border-radius: 50%;
+    transform: rotate(180deg);
+}
+
+input{
+    display: block;
+    margin:  5vh auto;
+    text-align: center;
+    
+    width: 40%;
+    font-size: larger;
+    padding: 2vh 1vw;
+
+    border: none;
+    border-bottom: solid 3px blue;
+}
+
+input:focus{
+    outline: none;
+    border: solid 2px blue;
+    box-shadow: 3px 3px gray;
+}
+
+input::placeholder{
+    text-align: center;
+    color: orange;
+    opacity: 0.5;
+}
+p{
+    width: 80%;
+    text-align: justify;
+    margin: auto;
+    font-size: large;
+    font-family: cursive;
+    text-indent: 5vw;
+    border: solid 1px gray;
+    padding: 2vh 2vw;
+    opacity: 0.2;
+}
+
+p:hover{
+    opacity: 1;
+    box-shadow: 0 0 10px;
+}
+
+p::first-letter{
+    font-size: 50px;
+    font-style: italic;
+}
+
+p::first-line{
+    color: blue;
+}
+
+p::selection{
+    background: black;
+    color: greenyellow;
+}
+
+p::after{
+    content: "***";
+    color: red;
+}
+
+p::before{
+    content: "***";
+    color: aqua;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Forms.css">
+</head>
+
+<body>
+
+    <h1>Print name</h1>
+    <div class="printname">
+        <form onsubmit="handleSubmit(event)">
+            <input type="text" placeholder="Enter Fname">
+            <input type="text" placeholder="Enter Lname">
+            <button>Print</button>
+        </form>
+        <h3 id="myname"></h3>
+    </div>
+
+
+    <h1>Age Calculator</h1>
+
+    <div class="formbox">
+        <form onsubmit="ageCalculate(event)">
+            <input type="text" placeholder="Enter User name: ">
+            <input type="date">
+            <button>
+                Age Calculate
+            </button>
+        </form>
+        <h3 id="ageprint"></h3>
+    </div>
+
+    <h1>Email verification</h1>
+    <div class="formbox">
+        <form onsubmit="validation(event)">
+            <input type="email" placeholder="Enter User name: "><br><br>
+            <input type="password"><br><br>
+            <button>
+                verify
+            </button>
+        </form>
+        <h3 id="hari"></h3>
+        <h3 id="inputField"></h3>
+        <h3 id="credentials"></h3>
+    </div>
+    <script src="./validation.js"></script>
+</body>
+
+</html>

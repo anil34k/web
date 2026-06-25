@@ -1,0 +1,21 @@
+#hardcode{
+    color: white; /* Sets the foreground color of text. Types: <color> values (name, hex, rgb, rgba, hsl, hsla). Example: white or #FFFFFF */
+    background-color: orange; /* Sets the background color of an element. Types: <color> values (name, hex, rgb, rgba, hsl, hsla). Example: orange or #FFA500 */
+}
+
+#hexadecimal{
+    color:#2600ff; /* color: <color> - Sets the foreground color of text. Value type: hexadecimal color code (e.g., #2600ff) */
+    background-color:#ffffff; /* background-color: <color> - Sets the background color of an element. Value type: hexadecimal color code (e.g., #ffffff) */
+}
+
+#decimal{
+    color: rgb(255, 255, 255); /* Sets the foreground color of text. Types: <color> values (name, hex, rgb, rgba, hsl, hsla). Example: rgb(255, 255, 255) */
+    background-color: rgb(0, 255, 0); /* Sets the background color of an element. Types: <color> values (name, hex, rgb, rgba, hsl, hsla). Example: rgb(0, 255, 0) */
+}
+
+h2{
+    text-align: center; /* Specifies the horizontal alignment of text. Types: left | right | center | justify | start | end | inherit. Example: center */
+}
+
+
+

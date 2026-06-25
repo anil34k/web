@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    // ============================================================
+    // Arrays in JavaScript — Notes & Examples
+    // ============================================================
+    //
+    // What is an Array?
+    // An array is a container that stores multiple values in one variable.
+    //
+    // Visual:
+    //   Index:   0       1        2
+    //          -----------------------
+    //   Value: | red | green | black |
+    //          -----------------------
+    // Access values using the index → colors[1] gives "green"
+
+
+    // ============================================================
+    // Part 1: Creating an Array
+    // ============================================================
+    // let arr = [10, 'hi', true, { fname: 'anil' }]
+    //
+    // Index  Value
+    // -----  ----------
+    //   0    10
+    //   1    "hi"
+    //   2    true
+    //   3    {fname:"anil"}
+    //
+    // console.log(arr)         → [10, "hi", true, {fname:"anil"}]
+    // console.log(typeof arr)  → object  (Arrays are special objects!)
+    // console.log(arr.length)  → 4
+    // console.log(arr[1])      → hi
+    // console.log(typeof arr[1]) → string
+
+
+    // ============================================================
+    // Part 2: CRUD Operations on Arrays
+    // C = Create  R = Read  U = Update  D = Delete
+    // ============================================================
+
+    // CREATE
+    // let arr2 = [10, 20, 30, 40, 50]
+    // Output: [10,20,30,40,50]   Length: 5
+
+    // ADD  → syntax: arrayname[index] = newvalue
+    // arr2[6] = 'hi'
+    // Index: 0   1   2   3   4    5     6
+    // Value: 10  20  30  40  50  empty  hi
+    // Output: [10,20,30,40,50,empty,"hi"]   Length: 7
+
+    // UPDATE → syntax: arrayname[index] = newvalue
+    // arr2[2] = 'bye'
+    // Before: [10,20,30,40,50]
+    // After:  [10,20,'bye',40,50]
+
+    // DELETE → syntax: delete arrayname[index]
+    // delete arr2[3]
+    // Before: [10,20,'bye',40,50]
+    // After:  [10,20,'bye',empty,50]
+    // ⚠ delete removes value but KEEPS the index slot (becomes empty)
+    // Better alternative: arr2.splice(3,1) → removes element completely
+
+
+    // ============================================================
+    // Part 3: Looping Through Arrays
+    // let colors = ['red', 'green', 'black']
+    // ============================================================
+
+    // Using for loop:
+    // i=0 → red | i=1 → green | i=2 → black
+    // for(let i=0; i<colors.length; i++){
+    //     console.log(colors[i])
+    // }
+    // Output: red green black
+
+    // Using for...of (value directly — easier):
+    // for(let color of colors){
+    //     console.log(color)
+    // }
+    // Output: red green black
+
+    // Using forEach (callback-based — cleanest):
+    // colors.forEach((element)=>{
+    //     console.log(element)
+    // })
+    // Output: red green black
+
+
+    // ============================================================
+    // Part 4: Print Only Even Numbers
+    // let numbers = [10,15,20,25,30,35,40,45,50]
+    // ============================================================
+    // Logic: even number % 2 == 0
+    //   10 % 2 = 0  ✔
+    //   15 % 2 = 1  ✗
+    //   20 % 2 = 0  ✔
+    //
+    // for(let i=0; i<numbers.length; i++){
+    //     if(numbers[i] % 2 == 0){
+    //         console.log(numbers[i])
+    //     }
+    // }
+    // Output: 10 20 30 40 50
+
+
+    // ============================================================
+    // Part 5: Store Even Numbers in a New Array
+    // Original: [10,15,20,25,30,35,40,45,50]
+    // ============================================================
+    // How evenNumbers[evenNumbers.length] = value works:
+    //
+    //   evenNumbers = []         length=0 → evenNumbers[0] = 10 → [10]
+    //   evenNumbers = [10]       length=1 → evenNumbers[1] = 20 → [10,20]
+    //   ...
+    //   Final: [10,20,30,40,50]
+    //
+    // let evenNumbers = []
+    // for(let i=0; i<numbers.length; i++){
+    //     if(numbers[i] % 2 == 0){
+    //         evenNumbers[evenNumbers.length] = numbers[i]
+    //     }
+    // }
+
+
+    // ============================================================
+    // Part 6: Print Only Numbers from a Mixed Array
+    // let arr3 = [10, 'hi', true, 500, null, 'bye']
+    // ============================================================
+    // Contents:
+    //   10    → number  ✔
+    //   'hi'  → string  ✗
+    //   true  → boolean ✗
+    //   500   → number  ✔
+    //   null  → object  ✗
+    //   'bye' → string  ✗
+    //
+    // Check: typeof arr3[i] === 'number'
+    // Output: 10  500
+
+
+    // ============================================================
+    // Bug Note 🐛
+    // ============================================================
+    // Wrong (uses numbers instead of numbers1):
+    //   for (let i = 0; i < numbers1.length; i++) {
+    //       if (numbers[i] % 2 == 0) {
+    //           evenNumbers[evenNumbers.length] = numbers[i]
+    //       }
+    //   }
+    //
+    // Correct (use numbers1 everywhere):
+    //   for (let i = 0; i < numbers1.length; i++) {
+    //       if (numbers1[i] % 2 == 0) {
+    //           evenNumbers[evenNumbers.length] = numbers1[i]
+    //       }
+    //   }
+
+
+    // ============================================================
+    // Quick Summary
+    // let arr = [10,20,30]
+    // ============================================================
+    // | Operation | Code                          |
+    // | --------- | ----------------------------- |
+    // | Create    | let arr = [10,20,30]          |
+    // | Read      | arr[0]                        |
+    // | Add       | arr[3] = 40                   |
+    // | Update    | arr[1] = 50                   |
+    // | Delete    | delete arr[1]                 |
+    // | Length    | arr.length                    |
+    // | Loop      | for / for...of / forEach      |
+    //
+    // Visual:
+    //   let fruits = ["apple","banana","mango"]
+    //   Index:   0         1         2
+    //           -------------------------
+    //   Value: | apple | banana | mango |
+    //           -------------------------
+    //   fruits[0] → apple
+    //   fruits[1] → banana
+    //   fruits[2] → mango
+
+
+    // ============================================================
+    // Next Topics to Learn (Array Methods)
+    // ============================================================
+    // 1. push()     → add to end
+    // 2. pop()      → remove from end
+    // 3. shift()    → remove from beginning
+    // 4. unshift()  → add to beginning
+    // 5. splice()   → add/remove at any position
+    // 6. slice()    → copy a portion of array
+    // 7. filter()   → return elements matching condition
+    // 8. map()      → transform each element
+    //
+    // These are the most important array methods
+    // used in real JavaScript projects.
+
+    </script>
+</body>
+</html>

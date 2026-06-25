@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#tempForm {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    max-width: 350px;
+    width: 100%;
+}
+
+h1 {
+    color: #4c75c8;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#textBox {
+    width: 60%;
+    text-align: center;
+    font-size: 25px;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.radio-container {
+    text-align: left;
+    margin-left: 20%;
+    margin-bottom: 15px;
+}
+
+.radio-container input {
+    margin-right: 5px;
+}
+
+button {
+    margin-top: 10px;
+    background-color: #e53935;
+    color: white;
+    font-size: 20px;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+button:hover {
+    background-color: #c62828;
+}
+
+#result {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 25px;
+}

@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.loading{
+    border: none;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background:conic-gradient(white,navy);
+    margin: 5vh auto;
+    animation:load 2s linear infinite;
+}
+
+.circle{
+    border: none;
+    border-radius: 50%;
+    height: 13px;
+    width: 13px;
+    background:white;
+    animation:load 2s linear infinite;
+}
+
+.circle.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@keyframes load{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+

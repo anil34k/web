@@ -1,0 +1,53 @@
+/* 
+display grid */
+
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+
+.textbox{
+    border: solid 2px black;
+    height: 200px;
+    width: 200px;
+    background: yellow;
+    margin: 5vh auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container{
+    background: gray;
+    margin: 10vh auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 5vh;
+    justify-content: space-evenly;
+}
+
+.box{
+    border: solid 2px black;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+.c1{
+    color: red;
+    background: yellow;
+}
+.c2{
+    color: yellow;
+    background: blueviolet;
+}
+.c3{
+    color: green;
+    background: black;
+}

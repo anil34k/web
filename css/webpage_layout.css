@@ -1,0 +1,152 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#container{
+    background: yellow;
+    display: grid;
+    /* grid-template-columns: repeat(2,auto); */
+    grid-template-areas: 
+    "header header header"
+    "navbar navbar navbar"
+    "aside main right"
+    "footer footer footer";
+    grid-template-rows: 10vh 25vh 100vh 10vh;
+    grid-template-columns: 20vw auto 0;
+}
+
+header,nav,aside,main,footer{
+    text-align: center;
+    place-content: center;
+}
+
+.right{
+    background: lightpink;
+    grid-area: right;
+}
+/* !--------------------HEADER-------------------- */
+
+header{
+    background: lightblue;
+    grid-area: header;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+header a{    
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    text-decoration: overline;
+}
+
+/* -----------------NavBar-------------------- */
+
+nav{
+    background: lightcoral;
+    grid-area: navbar;
+}
+
+nav .container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav .circle{
+    border: none;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    padding: 1vh 1vw;
+}
+
+nav img{
+    height: 100%;
+    width: 100%;    
+    filter: drop-shadow(1px 1px 10px black);
+}
+
+/* ------------LEFT SIDE BAR-------------- */
+
+aside{
+    background: lightcyan;
+    grid-area: aside;
+}
+
+.left h2{
+    margin: 5vh auto;
+}
+
+.left ul{
+    text-align: left;
+    margin-left: 2vw;
+    list-style: none;
+}
+
+.left li{
+    line-height: 8vh;
+}
+
+.left li::before{
+    content: "☑️";
+}
+
+/* -------------MAIN BAR--------------- */
+
+
+main{
+    background: lightgray;
+    grid-area: main;
+    overflow-y: hidden;
+}
+
+main:hover{
+    overflow-y: scroll;
+}
+
+main .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 10vh;
+    margin-top: 5vh;
+}
+
+main .card{
+    border: solid 1px black;
+    width: 250px;
+    padding: 2vh 1vw;
+}
+
+main img{
+    width: 100%;
+    height: 30vh;
+}
+
+main h3{
+    margin: 2vh 0;
+}
+
+main p{
+    text-align: justify;
+    font-size: small;
+    text-indent: 5vw;
+}
+
+/* -----------FOOTER-------------- */
+
+footer{
+    background: lightgreen;
+    grid-area: footer;
+}
+
+

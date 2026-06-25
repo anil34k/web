@@ -1,0 +1,24 @@
+div p {
+    color: red; /* Sets the foreground color of text. Types: <color> values (name, hex, rgb, rgba, hsl, hsla). Example: red */
+    font-size: larger; /* Sets font size. Types: <length> | <percentage> | xx-small | x-small | small | medium | large | x-large | xx-large | smaller | larger. Example: larger */
+    font-style: italic; /* Sets font style. Types: normal | italic | oblique. Example: italic */
+}
+
+div > p{
+    font-size: larger; /* Sets font size. Types: <length> | <percentage> | xx-small | x-small | small | medium | large | x-large | xx-large | smaller | larger. Example: larger */
+    font-style: italic; /* Sets font style. Types: normal | italic | oblique. Example: italic */
+    background-color: yellow; /* Sets the background color of an element. Types: <color> values (name, hex, rgb, rgba, hsl, hsla). Example: yellow */
+}
+
+div + p{
+    text-align: center; /* Specifies the horizontal alignment of text. Types: left | right | center | justify | start | end | inherit. Example: center */
+    font-size: larger; /* Sets font size. Types: <length> | <percentage> | xx-small | x-small | small | medium | large | x-large | xx-large | smaller | larger. Example: larger */
+    font-style: italic; /* Sets font style. Types: normal | italic | oblique. Example: italic */
+    color: aqua; /* Sets the foreground color of text. Types: <color> values (name, hex, rgb, rgba, hsl, hsla). Example: aqua */
+    background-color: black; /* Sets the background color of an element. Types: <color> values (name, hex, rgb, rgba, hsl, hsla). Example: black */
+}
+
+div ~ p{
+    font-size: larger; /* Sets font size. Types: <length> | <percentage> | xx-small | x-small | small | medium | large | x-large | xx-large | smaller | larger. Example: larger */
+    font-style: italic; /* Sets font style. Types: normal | italic | oblique. Example: italic */
+}

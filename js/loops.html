@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    // ============================================================
+    // Loops & Switch in JavaScript
+    // Covers: switch, while, for, for...in, for...of
+    // ============================================================
+
+
+    // ------------------------------------------------------------
+    // 1. switch Statement
+    // Used to compare one value against many possible values.
+    //
+    // Syntax:
+    //   switch (value) {
+    //       case option1:
+    //           // code
+    //           break;
+    //       case option2:
+    //           // code
+    //           break;
+    //       default:
+    //           // code
+    //   }
+    // ------------------------------------------------------------
+
+    // Example 1: Day of Week
+    let day = Number(prompt("enter the day"))
+    switch (day) {
+        case 1:
+            console.log("Monday");
+            break;
+        case 2:
+            console.log("Tuesday");
+            break;
+        case 3:
+            console.log("Wednesday");
+            break;
+        default:
+            console.log("Invalid day");
+    }
+    // Output: Tuesday
+
+    // Example 2: Grade
+    let grade = "A";
+    switch (grade) {
+        case "A":
+            console.log("Excellent");
+            break;
+        case "B":
+            console.log("Good");
+            break;
+        case "C":
+            console.log("Average");
+            break;
+        default:
+            console.log("Unknown Grade");
+    }
+    // Output: Excellent
+
+    // Example 3: Multiple Cases
+    let fruit = "banana";
+    switch (fruit) {
+        case "apple":
+        case "mango":
+        case "banana":
+            console.log("Fruit Found");
+            break;
+        default:
+            console.log("Not Found");
+    }
+    // Output: Fruit Found
+
+
+    // ------------------------------------------------------------
+    // 2. while Loop
+    // Runs as long as a condition is true.
+    //
+    // Syntax:
+    //   while (condition) {
+    //       // code
+    //   }
+    // ------------------------------------------------------------
+
+    // Example 1: Count 1 to 5
+    let i = 1;
+    while (i <= 5) {
+        console.log(i);
+        i++;
+    }
+    // Output: 1 2 3 4 5
+
+    // Example 2: Even Numbers
+    let num = 2;
+    while (num <= 10) {
+        console.log(num);
+        num += 2;
+    }
+    // Output: 2 4 6 8 10
+
+    // Example 3: Sum Numbers (1 + 2 + 3 + 4 + 5 = 15)
+    let i2 = 1;
+    let sum = 0;
+    while (i2 <= 5) {
+        sum += i2;
+        i2++;
+    }
+    console.log(sum);
+    // Output: 15
+
+
+    // ------------------------------------------------------------
+    // 3. for Loop
+    // Used when you know how many times the loop should run.
+    //
+    // Syntax:
+    //   for (initialization; condition; increment) {
+    //       // code
+    //   }
+    // ------------------------------------------------------------
+
+    // Example 1: Print 1 to 5
+    for (let i = 1; i <= 5; i++) {
+        console.log(i);
+    }
+    // Output: 1 2 3 4 5
+
+    // Example 2: Print Table of 5
+    for (let i = 1; i <= 10; i++) {
+        console.log(`5 x ${i} = ${5 * i}`);
+    }
+    // Output: 5 x 1 = 5 ... 5 x 10 = 50
+
+    // Example 3: Reverse Count
+    for (let i = 10; i >= 1; i--) {
+        console.log(i);
+    }
+    // Output: 10 9 8 7 6 5 4 3 2 1
+
+    // Example 4: Array Loop
+    let colors = ["Red", "Green", "Blue"];
+    for (let i = 0; i < colors.length; i++) {
+        console.log(colors[i]);
+    }
+    // Output: Red Green Blue
+
+
+    // ------------------------------------------------------------
+    // 4. for...in Loop
+    // Used to get keys/indexes.
+    // Works mainly with: Objects, Array indexes
+    // ------------------------------------------------------------
+
+    // Example 1: Object Keys
+    let person = {
+        name: "John",
+        age: 25,
+        city: "London"
+    };
+    for (let key in person) {
+        console.log(key);
+    }
+    // Output: name age city
+
+    // Example 2: Object Key and Value
+    let person2 = {
+        name: "John",
+        age: 25,
+        city: "London"
+    };
+    for (let key in person2) {
+        console.log(key, person2[key]);
+    }
+    // Output: name John | age 25 | city London
+
+    // Example 3: Array Indexes
+    let fruits = ["Apple", "Banana", "Mango"];
+    for (let index in fruits) {
+        console.log(index);
+    }
+    // Output: 0 1 2
+
+    // Example 4: Array Index + Value
+    let fruits2 = ["Apple", "Banana", "Mango"];
+    for (let index in fruits2) {
+        console.log(index, fruits2[index]);
+    }
+    // Output: 0 Apple | 1 Banana | 2 Mango
+
+
+    // ------------------------------------------------------------
+    // 5. for...of Loop
+    // Used to get values directly.
+    // Works with: Arrays, Strings, Maps, Sets
+    // ------------------------------------------------------------
+
+    // Example 1: Array Values
+    let fruits3 = ["Apple", "Banana", "Mango"];
+    for (let fruit of fruits3) {
+        console.log(fruit);
+    }
+    // Output: Apple Banana Mango
+
+    // Example 2: Numbers Array
+    let numbers = [10, 20, 30];
+    for (let num of numbers) {
+        console.log(num);
+    }
+    // Output: 10 20 30
+
+    // Example 3: String Characters
+    let name = "John";
+    for (let letter of name) {
+        console.log(letter);
+    }
+    // Output: J o h n
+
+    // Example 4: Sum Array
+    let numbers2 = [10, 20, 30];
+    let total = 0;
+    for (let num of numbers2) {
+        total += num;
+    }
+    console.log(total);
+    // Output: 60
+
+
+    // ------------------------------------------------------------
+    // Difference Between for...in and for...of
+    // ------------------------------------------------------------
+    let fruits4 = ["Apple", "Banana", "Mango"];
+
+    // for...in → returns indexes (keys)
+    for (let item in fruits4) {
+        console.log(item);       // 0, 1, 2
+    }
+
+    // for...of → returns values
+    for (let item of fruits4) {
+        console.log(item);       // Apple, Banana, Mango
+    }
+
+
+    // ------------------------------------------------------------
+    // Quick Cheat Sheet
+    // ------------------------------------------------------------
+    // | Statement  | Used For                     | Returns            |
+    // | ---------- | ---------------------------- | ------------------ |
+    // | switch     | Multiple conditions          | Matching case      |
+    // | while      | Repeat until condition false | Repeated execution |
+    // | for        | Known number of loops        | Repeated execution |
+    // | for...in   | Objects / Array indexes      | Keys or indexes    |
+    // | for...of   | Arrays / Strings             | Values             |
+
+    // Easy Memory Trick:
+    //   for      → "Run X times"
+    //   while    → "Run while condition is true"
+    //   switch   → "Choose one option"
+    //   for...in → IN = Index / Key
+    //   for...of → OF = Value from collection
+
+    // Most common real-world usage:
+    // Object:        for (let key in user) { }
+    // Array:         for (let value of arr) { }
+    // Fixed count:   for (let i = 0; i < 10; i++) { }
+    // Unknown count: while (condition) { }
+    // Multi-choice:  switch (choice) { }
+
+    // These five constructs cover about 90% of everyday
+    // looping and decision-making in JavaScript.
+
+    </script>
+</body>
+</html>

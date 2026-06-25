@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bom</title>
+</head>
+<body>
+    <!-- events -->
+     <button onclick="singleclick()">click me</button>
+     <button ondblclick="doubleclick()">double click me</button>
+
+     <hr>
+     <button onclick="example1()">example1</button>
+
+    <hr>
+
+    <!-- timing functions -->
+    <H3>  TIMING FUNCTION </H3>
+    <button onclick = "x = setTimeout(func1, 3000)">
+        start
+    </button>
+
+    <button onclick = "clearTimeout(x)">
+        stop
+    </button>
+<!-- /////////////////////////////////////////////////// -->
+    <hr>
+<H3>example for setinterval and clearinterval </H3>
+    <button onclick = "y = setInterval(func2, 1000)">
+        start
+    </button>
+
+    <button onclick = "clearInterval(y)">
+        stop
+    </button>
+<!-- ////////////////////////////////////////// -->
+    <hr>
+    <!-- example for setinterval and clearinterval -->
+     <button onclick="p=setInterval(printname,1000)">start</button>
+     <button onclick="clearInterval(p)">stop</button>
+     <button onclick="resetnum()">reset</button>
+
+     <hr>
+<!--  example-->
+     <button onclick = 'printnumber()'> pritnt number</button>
+    <script src="bom.js"></script>
+</body>
+</html> 
